@@ -1,0 +1,17 @@
+{
+    "name": "codeages/biz-rate-limiter",
+    "description": "Rate limiter with Biz Framework.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": { 
+            "Codeages\\Biz\\RateLimiter\\": "src/"
+        }
+    },
+    "require": {
+        "codeages/biz-framework": "^0.1.6"
+    },
+    "config" : {
+        "bin-dir" : "bin"
+    }
+}
