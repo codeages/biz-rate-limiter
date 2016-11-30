@@ -11,8 +11,8 @@ class RateLimiterServiceProviderTestCase extends BaseTestCase
         $provider = new RateLimiterServiceProvider();
         self::$biz->register($provider);
 
-        $limiterCreator = self::$biz['ratelimiter.creator'];
-        $limiter = $limiterCreator('test', 10, 600);
+        $factory = self::$biz['ratelimiter.factory'];
+        $limiter = $factory('test', 10, 600);
 
         $this->assertInstanceOf('Codeages\RateLimiter\RateLimiter', $limiter);
     }

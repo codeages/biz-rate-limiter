@@ -11,7 +11,7 @@ class RateLimiterServiceProvider implements ServiceProviderInterface
 {
     public function register(Container $container)
     {
-        $container['ratelimiter.creator'] = function($container) {
+        $container['ratelimiter.factory'] = function($container) {
             return function($name, $maxAllowance, $period) use ($container) {
                 return new RateLimiter($name, $maxAllowance, $period, $container['ratelimiter.storage']);
             };
