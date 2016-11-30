@@ -9,7 +9,8 @@
         }
     },
     "require": {
-        "codeages/biz-framework": "^0.1.6"
+        "codeages/biz-framework": "^0.1.6",
+        "codeages/rate-limiter": "dev-master"
     },
     "config" : {
         "bin-dir" : "bin"
