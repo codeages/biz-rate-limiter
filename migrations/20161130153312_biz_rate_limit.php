@@ -2,7 +2,7 @@
 
 use Phpmig\Migration\Migration;
 
-class Init extends Migration
+class BizRateLimit extends Migration
 {
     /**
      * Do the migration
